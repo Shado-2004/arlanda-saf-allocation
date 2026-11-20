@@ -4,6 +4,10 @@ Run:  python -m streamlit run app.py
 """
 from __future__ import annotations
 
+import base64
+import html
+import sys
+
 import numpy as np
 import pandas as pd
 import plotly.graph_objects as go
@@ -47,6 +51,21 @@ def plot_layout(fig, title="", height=380, **kw):
 
 def show(fig):
     st.plotly_chart(fig, width="stretch")
+
+
+IN_BROWSER = sys.platform == "emscripten"   # running as the single-file HTML (stlite/Pyodide)
+
+
+def download(label: str, data: str, file_name: str):
+    """st.download_button, or a data-URI link when running inside the browser build."""
+    if not IN_BROWSER:
+        st.download_button(label, data, file_name, "text/csv")
+        return
+    b64 = base64.b64encode(data.encode("utf-8")).decode("ascii")
+    st.markdown(f'<a download="{html.escape(file_name)}" href="data:text/csv;base64,{b64}" '
+                f'style="display:inline-block;padding:6px 14px;border:1px solid {TEAL};border-radius:6px;'
+                f'color:{NAVY};text-decoration:none;font-weight:600">⬇ {html.escape(label)}</a>',
+                unsafe_allow_html=True)
 
 
 def fmt_t(x, d=2):
@@ -218,8 +237,8 @@ with inputs_box:
             st.caption(n_)
         try:
             hist = historical_export(case.manifest)
-            st.download_button("Download historical manifest with evidence status (CSV)",
-                               hist.to_csv(index=False), "arn_manifest_evidence.csv", "text/csv")
+            download("Download historical manifest with evidence status (CSV)",
+                     hist.to_csv(index=False), "arn_manifest_evidence.csv")
         except SyntheticExportBlocked as e:
             st.warning(str(e))
     else:
@@ -582,8 +601,8 @@ with tab3:
         st.caption(run.heldout.method + " Planning results are exact expectations (no sampling).")
     try:
         csv = export_csv(run, case)
-        st.download_button("Download comparison CSV (units, strategy, seed, assumptions)", csv,
-                           f"saf_comparison_{run.kind}_{run.fingerprint}.csv", "text/csv")
+        download("Download comparison CSV (units, strategy, seed, assumptions)", csv,
+                 f"saf_comparison_{run.kind}_{run.fingerprint}.csv")
     except Exception as e:  # pragma: no cover
         st.error(str(e))
 

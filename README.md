@@ -17,6 +17,16 @@ levels, aircraft performance checks and air traffic clearance.
 
 ## Quick start
 
+### No-install option: the single HTML file
+
+Download **`arlanda-saf-app.html`** from this repo and double-click it. The whole app runs inside the browser
+(Chrome, Edge, Firefox or Safari) using [stlite](https://github.com/whitphx/stlite), which runs Streamlit on
+WebAssembly. The app code and the data CSVs are embedded in the file. The first load needs internet to fetch the
+Python runtime from the jsDelivr CDN and takes about 10–60 seconds. Results are identical to the Python version.
+CSV downloads appear as links. Rebuild the file after changing code with `python tools/build_html.py`.
+
+### Full Python install
+
 You need **Python 3.11 or newer** ([python.org/downloads](https://www.python.org/downloads/)). On Windows, tick
 *"Add python.exe to PATH"* in the installer. After installation the app needs no internet, accounts or API keys,
 because all data is bundled in `data/`.
