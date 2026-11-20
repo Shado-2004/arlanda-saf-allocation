@@ -1,0 +1,10 @@
+parameter,desired_unit,value,reference_sensitivity_value,status
+opening_neat_saf_stock,kg pure SAF,,,Operator input required. Reference is an optional modelling scale.
+finished_blend_per_refueller_load,L,,8000,Operator input required. Reference is an optional modelling scale.
+special_refuellers_available_by_time_window,count,,,Operator input required. Reference is an optional modelling scale.
+special_refuelling_service_time,minutes,,,Operator input required. Reference is an optional modelling scale.
+special_delivery_cutoff,UTC datetime,,,Operator input required. Reference is an optional modelling scale.
+additional_uplift_fee,EUR per special uplift,,,Operator input required. Reference is an optional modelling scale.
+actual_price_neat_hefa,EUR per tonne,,,Operator input required. Reference is an optional modelling scale.
+actual_price_ordinary_jet,EUR per tonne,,,Operator input required. Reference is an optional modelling scale.
+certified_HEFA_batch_lifecycle_intensity,g CO2e per MJ,,,Operator input required. Reference is an optional modelling scale.

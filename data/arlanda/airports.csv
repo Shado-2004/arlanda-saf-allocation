@@ -1,0 +1,7 @@
+iata,icao,airport,latitude_deg,longitude_deg,elevation_ft,timezone,source_url,data_url
+ARN,ESSA,Stockholm Arlanda,59.64849,17.928829,137,Europe/Stockholm,https://ourairports.com/airports/ESSA/,https://davidmegginson.github.io/ourairports-data/airports.csv
+CPH,EKCH,Copenhagen Kastrup,55.617900848389,12.656000137329,17,Europe/Copenhagen,https://ourairports.com/airports/EKCH/,https://davidmegginson.github.io/ourairports-data/airports.csv
+OSL,ENGM,Oslo Gardermoen,60.193901,11.1004,681,Europe/Oslo,https://ourairports.com/airports/ENGM/,https://davidmegginson.github.io/ourairports-data/airports.csv
+BER,EDDB,Berlin Brandenburg,52.361738,13.502341,157,Europe/Berlin,https://ourairports.com/airports/EDDB/,https://davidmegginson.github.io/ourairports-data/airports.csv
+LHR,EGLL,London Heathrow,51.470748,-0.459909,83,Europe/London,https://ourairports.com/airports/EGLL/,https://davidmegginson.github.io/ourairports-data/airports.csv
+CDG,LFPG,Paris Charles de Gaulle,49.00896,2.554117,392,Europe/Paris,https://ourairports.com/airports/LFPG/,https://davidmegginson.github.io/ourairports-data/airports.csv

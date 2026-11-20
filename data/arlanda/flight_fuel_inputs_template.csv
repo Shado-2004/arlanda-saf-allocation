@@ -1,0 +1,13 @@
+study_id,flight_number,payload_kg,block_fuel_kg,taxi_fuel_kg,trip_fuel_kg,reserve_fuel_kg,onboard_residual_fuel_kg,onboard_residual_saf_mass_fraction,delivered_blend_kg,actual_saf_uplift_kg,supplier_booking_cutoff_utc,planned_service_start_utc,planned_service_end_utc,source_or_assumption,status
+ARN-01,SK1415,,,,,,,,,,,,,,Operator input required or label a model estimate
+ARN-02,SK481,,,,,,,,,,,,,,Operator input required or label a model estimate
+ARN-03,SK525,,,,,,,,,,,,,,Operator input required or label a model estimate
+ARN-04,SK843,,,,,,,,,,,,,,Operator input required or label a model estimate
+ARN-05,SK573,,,,,,,,,,,,,,Operator input required or label a model estimate
+ARN-06,SK2677,,,,,,,,,,,,,,Operator input required or label a model estimate
+ARN-07,SK1421,,,,,,,,,,,,,,Operator input required or label a model estimate
+ARN-08,SK531,,,,,,,,,,,,,,Operator input required or label a model estimate
+ARN-09,SK1407,,,,,,,,,,,,,,Operator input required or label a model estimate
+ARN-10,SK527,,,,,,,,,,,,,,Operator input required or label a model estimate
+ARN-11,SK579,,,,,,,,,,,,,,Operator input required or label a model estimate
+ARN-12,SK493,,,,,,,,,,,,,,Operator input required or label a model estimate

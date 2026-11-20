@@ -1,0 +1,23 @@
+parameter,value,unit,status,use_or_limit,source
+intervention_saf_mass_fraction,0.35,kg SAF/kg delivered blend,Study setting,Inspired by the 2023 demonstration. Delivered fraction before residual fuel mixes.,https://doi.org/10.1016/j.jatrs.2024.100049
+reference_saf_mass_fraction,0,kg SAF/kg delivered blend,Illustrative scenario,Conventional-only reference. Substitute known batch composition when available.,
+fossil_jeta1_lifecycle_intensity,89,g CO2e/MJ,Published reference,Boeing Cascade conventional fuel default.,https://docs.cascade.boeing.com/docs/energy/jetFuel.html
+uco_hefa_lifecycle_intensity,13.9,g CO2e/MJ,Published pathway default,Used-cooking-oil HEFA only. Apply applicable pathway-specification corrections and substitute certified batch value when known.,https://www.icao.int/sites/default/files/environmental-protection/CORSIA/Documents/CORSIA%20Eligible%20Fuels/ICAO-document-06-Default-Life-Cycle-Emissions-November-2026.pdf
+jeta1_price,640,EUR/t,Published EU reference,EASA 2025 aviation fuel reference price. Actual Arlanda contract price is an operator input.,https://www.easa.europa.eu/en/downloads/143282/en
+aviation_biofuel_price,1925,EUR/t,Published EU reference,EASA 2025 category-level aviation biofuel reference. Illustrative HEFA price proxy.,https://www.easa.europa.eu/en/downloads/143282/en
+jet_density,800,kg/m3,Illustrative assumption,Use measured batch densities at a common reference temperature where available.,
+hefa_density,760,kg/m3,Illustrative assumption,Use measured batch densities at a common reference temperature where available.,
+jet_lhv,43,MJ/kg,Illustrative assumption,Energy-based burn conversion. The EEDB ground test fuel was 43.1 MJ/kg.,https://www.easa.europa.eu/en/downloads/131424/en
+hefa_lhv,44,MJ/kg,Illustrative assumption,Heating value of the neat component for the sensitivity case.,
+delivered_blend_volume_fraction,0.36175711,L SAF/L blend,Calculated example,Conversion of 35% by mass from the two assumed component densities.,https://doi.org/10.1016/j.jatrs.2024.100049
+delivered_blend_density,785.53,kg/m3,Calculated example,Calculated from the assumed densities and 35% delivered mass fraction.,
+hefa_a2_maximum_volume_fraction,0.5,L SAF/L blend,Published pathway limit,ICAO lists up to 50% for HEFA-SPK Annex A2. Finished fuel specification and batch certification also apply.,https://www.icao.int/SAF/saf-conversion-processes
+operating_empty_mass_proxy,44300,kg,Published OpenAP generic A20N model,"Proxy only. Use tail-specific weight, payload and fuel when available.",https://github.com/junzis/openap/blob/master/openap/data/aircraft/a20n.yml
+maximum_takeoff_mass_proxy,79000,kg,Published OpenAP generic A20N model,Default model limit. Actual weight variant is specific to the aircraft.,https://github.com/junzis/openap/blob/master/openap/data/aircraft/a20n.yml
+wing_area_proxy,124,m2,Published OpenAP generic A20N model,Geometry reference.,https://github.com/junzis/openap/blob/master/openap/data/aircraft/a20n.yml
+wing_span_proxy,35.8,m,Published OpenAP generic A20N model,Geometry reference.,https://github.com/junzis/openap/blob/master/openap/data/aircraft/a20n.yml
+engine_count,2,engines,Study aircraft,Use LEAP-1A26 if the performance model supports engine selection.,https://github.com/junzis/openap/blob/master/openap/data/aircraft/a20n.yml
+trial_refueller_capacity,8000,litres of finished blend,Published trial observation,Dedicated truck in the 2023 ALIGHT campaign. Present-day service capacity requires validation.,https://doi.org/10.1016/j.jatrs.2024.100049
+one_trial_size_truck_equivalent_neat_saf,2199483.2,kg pure SAF,Calculated sensitivity scale,One illustrative full load of 35%-by-mass fuel at the assumed blend density. Actual stock remains an operator input.,https://doi.org/10.1016/j.jatrs.2024.100049
+ground_nvpm_number_median_reduction,42,percent,Published taxi-plume observation,"34% HEFA blend. 95% interval 17–62%. Source for evidence discussion, no direct EF coefficient.",https://pmc.ncbi.nlm.nih.gov/articles/PMC12969261/
+qaei_contrail_100yr_conversion,2.9674939022239586e-13,t CO2e per joule,Course convention,Apply once to signed radiative-forcing-based energy forcing. Keep the same horizon for all policies.,QAEI Tutorial 03 slide 21

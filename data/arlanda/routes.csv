@@ -1,0 +1,6 @@
+origin_iata,destination_iata,destination,flights_selected,great_circle_km,interpretation
+ARN,CPH,Copenhagen Kastrup,3,546.8,Geographic reference distance calculated from airport coordinates. Use original and alternate trajectory models for performance.
+ARN,OSL,Oslo Gardermoen,3,385.2,Geographic reference distance calculated from airport coordinates. Use original and alternate trajectory models for performance.
+ARN,BER,Berlin Brandenburg,1,855.2,Geographic reference distance calculated from airport coordinates. Use original and alternate trajectory models for performance.
+ARN,LHR,London Heathrow,3,1462.7,Geographic reference distance calculated from airport coordinates. Use original and alternate trajectory models for performance.
+ARN,CDG,Paris Charles de Gaulle,2,1539.5,Geographic reference distance calculated from airport coordinates. Use original and alternate trajectory models for performance.

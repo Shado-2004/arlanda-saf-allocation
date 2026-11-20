@@ -1,0 +1,2 @@
+study_id,flight_number,registration,position_time_utc,original_reported_altitude_ft,latitude_deg,longitude_deg,reason
+ARN-09,SK1407,EI-SIE,2026-11-17T14:38:10Z,59200,58.23033,15.52856,Outside the altitude range screened for the A320-251N case
