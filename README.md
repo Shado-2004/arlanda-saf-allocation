@@ -1,5 +1,7 @@
 # Climate-Optimal SAF Allocation Under Uncertainty | Stockholm Arlanda
 
+**▶ Try it in your browser, no install:** https://shado-2004.github.io/arlanda-saf-allocation/ (the first load takes up to a minute while Python starts)
+
 > **Which Stockholm departures should receive the available 35%-by-mass SAF blend, how much pure SAF would
 > that use, and when would an altitude change help more?**
 
